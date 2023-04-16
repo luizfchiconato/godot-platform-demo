@@ -1,0 +1,11 @@
+res://gui/pause_menu_singleplayer.tscn
+res://gui/theme.tres
+res://level/tileset.tres
+res://hud/hud.tscn
+res://enemy/enemy.tscn
+res://level/coin.tscn
+res://player/player.tscn
+res://level/level.tscn
+res://gui/pause_menu.tscn
+res://game_splitscreen.tscn
+res://game_singleplayer.tscn

@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://bkub7pgw2xmvs"]
+
+[ext_resource type="Script" path="res://hud/hud.gd" id="1_ltlsk"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_56vh0"]
+bg_color = Color(0.168627, 0.168627, 0.168627, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mwjbk"]
+bg_color = Color(0.952941, 0.388235, 0.368627, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_erxbe"]
+bg_color = Color(0, 0.658824, 0.843137, 1)
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_ltlsk")
+
+[node name="HealthBar" type="ProgressBar" parent="."]
+offset_left = 21.0
+offset_top = 12.0
+offset_right = 198.0
+offset_bottom = 23.0
+theme_override_styles/background = SubResource("StyleBoxFlat_56vh0")
+theme_override_styles/fill = SubResource("StyleBoxFlat_mwjbk")
+value = 100.0
+show_percentage = false
+
+[node name="HealthBarBlue" type="ProgressBar" parent="."]
+offset_left = 21.0
+offset_top = 12.0
+offset_right = 198.0
+offset_bottom = 23.0
+theme_override_styles/fill = SubResource("StyleBoxFlat_erxbe")
+value = 100.0
+show_percentage = false
